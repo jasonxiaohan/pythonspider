@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-Worker多进程操作类
 Created on 2016年11月03日
 文件储存处理
 @author: DAIXIAOHAN
