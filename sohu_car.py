@@ -66,32 +66,5 @@ def on_extract_field(fieldname, data, page):
 spider.on_extract_field = on_extract_field
 spider.start()
 
-"""
-html = spider.request_url("http://db.auto.sohu.com/api/model/select/trims_4663.json" )
-try:
-    jsons = json.loads(html.decode("utf-8"))
-except Exception as e:
-    jsons = json.loads(html)
-
-result = [trims for row in jsons["trimyears"]
-            for trims in row["trims"]
-          ]
-data = ""
-for r in result:
-    data+= str(r["tid"])+"$"+r["tname"]+"|"
-print(data)
-
-urlList = re.findall(re.compile('http://db.auto.sohu.com/[a-zA-Z-]+\d+/([0-9]+)'), "http://db.auto.sohu.com/higer-2035/4220")
-for x in urlList:
-    print(x)
-
-exit()
-
-
-searchObj = re.search("http://db.auto.sohu.com/[a-zA-Z-]+\d+/([0-9]+)","http://db.auto.sohu.com/higer-2035/4220",re.M|re.I)
-if searchObj:
-    print(searchObj.groups())
-"""
-
 
 
