@@ -8,6 +8,7 @@ log  记录日志
 Created on 2016年11月06日
 @author: DAIXIAOHAN
 """
+
 class log:
     log_show = False
     def error(msg):
