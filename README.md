@@ -2,6 +2,7 @@ pythonspider -- PYTHON蜘蛛爬虫框架
 
 下面以马蜂窝为例, 来看一下我们的爬虫长什么样子:
 
+```
 # 马蜂窝
 configs = {
    "name": "马蜂窝",
@@ -30,6 +31,6 @@ configs = {
 
 spider = pyspider(configs)
 spider.start()
-
-
+```
 爬虫的整体框架就是这样, 首先定义了一个configs字典, 里面设置了待爬网站的一些信息, 然后通过调用spider = phpspider(configs)和spider.start()来配置并启动爬虫.
+
