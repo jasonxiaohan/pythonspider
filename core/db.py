@@ -6,6 +6,7 @@ Created on 2016年11月23日
 @author: DAIXIAOHAN
 """
 
+
 class db:
     def insert(self, table='', data={}, return_sql=False):
         items_sql=values_sql=""
