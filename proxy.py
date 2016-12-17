@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 from core.util import util
 
 filepath = os.path.split(os.path.realpath(__file__))[0]
-
 User_Agent = 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
 header = {}
 header['User-Agent'] = User_Agent
