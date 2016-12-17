@@ -6,6 +6,7 @@ import platform
 
 if "Linux" in platform.system():
     import fcntl
+    
 
 class util:
     """
