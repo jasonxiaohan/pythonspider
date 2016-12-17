@@ -1,10 +1,12 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+
 """
 pyspider
 Created on 2016年11月04日
 @author: DAIXIAOHAN
 """
+
 from bs4 import BeautifulSoup
 import urllib.parse as urlparse
 from operator import itemgetter
