@@ -133,4 +133,3 @@ spider.on_scan_page = on_scan_page
 spider.on_list_page = on_list_page
 spider.start()
 
-
