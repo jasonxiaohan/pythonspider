@@ -17,9 +17,9 @@ GLOBALS = {
                 },
             "redis":
                 {
-                    "host": "58.119.152.100",
+                    "host": "127.0.0.1",
                     "port": 6379,
-                    "pass": "n49v1u",
+                    "pass": "",
                     "prefix": "pythonspider",
                     "db": 0,
                     "timeout": 30
