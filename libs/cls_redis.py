@@ -7,6 +7,7 @@ Created on 2016年11月14日
 @author: DAIXIAOHAN
 PythonSpider Redis操作类文件
 """
+
 import redis
 from config import inc_config
 from core.log import log
