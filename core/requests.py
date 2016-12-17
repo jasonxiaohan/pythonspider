@@ -14,6 +14,7 @@ requests  请求类文件
 Created on 2016年11月09日
 @author: DAIXIAOHAN
 """
+
 class requests:
 
     # 版本号
