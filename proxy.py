@@ -25,3 +25,4 @@ for x in range(1,len(ips)):
     ip_temp = tds[1].get_text()+"\t"+tds[2].get_text()+"\n"
     # print(tds[2].contents[0]+"\t"+tds[3].contents[0])
     f.write(ip_temp)
+f.close()
