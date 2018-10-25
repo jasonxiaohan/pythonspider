@@ -279,7 +279,7 @@ class pyspider(util,cls_redis,db):
                 return
             # log.info("Result[{fields_num}]: {fields_str}".format(fields_num=fields_num, fields_str=fields))
             # 如果设置了导出选项
-            if self.configs["export"]:
+            if self.configs.get("export"):
                 if self.export_type == "csv":
                     util.put_file(self, self.export_file, util.format_csv(self, fields))
                 elif self.export_type == "sql":
@@ -287,7 +287,8 @@ class pyspider(util,cls_redis,db):
                     util.put_file(self, self.export_file, sql+";\n")
                 elif self.export_type == "db":
                     pass
-
+            else:
+                return fields
     """
     爬取页面
     """

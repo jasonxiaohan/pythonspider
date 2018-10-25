@@ -40,6 +40,16 @@ class util:
             os.mkdir(dir_path)
             return dir_path
 
+    # 读文件，返回文件的每一行
+    @staticmethod
+    def load_file(filename):
+        with open(filename, 'r', encoding='UTF-8') as f:
+            for i, line in enumerate(f):
+                if i == 0:  # 去掉文件第一行的title
+                    continue
+                yield line.strip('\r\n')
+        print('Load % s success!' % filename)
+
     """
     路径分隔符
     """
